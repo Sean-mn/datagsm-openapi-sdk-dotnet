@@ -1,4 +1,3 @@
-using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Datagsm.OpenApi.Exceptions;
@@ -13,7 +12,7 @@ public abstract class BaseClient
     private static readonly JsonSerializerOptions JsonOptions = new()
     {
         PropertyNameCaseInsensitive = true,
-        Converters = { new JsonStringEnumConverter() }
+        Converters = { new JsonStringEnumConverter(JsonNamingPolicy.SnakeCaseUpper) }
     };
 
     protected BaseClient(HttpClient httpClient)
@@ -63,14 +62,11 @@ public abstract class BaseClient
         };
     }
 
-    /// <summary>enum 값을 API 쿼리 파라미터 문자열로 변환합니다 (JsonStringEnumMemberName 어트리뷰트 우선).</summary>
+    /// <summary>enum 값을 API 쿼리 파라미터 문자열로 변환합니다.</summary>
     protected static string? ToApiString<T>(T? value) where T : struct, Enum
     {
         if (value is null) return null;
 
-        var memberName = value.ToString()!;
-        var memberInfo = typeof(T).GetMember(memberName).FirstOrDefault();
-        var attr = memberInfo?.GetCustomAttribute<JsonStringEnumMemberNameAttribute>();
-        return attr?.Name ?? memberName;
+        return JsonNamingPolicy.SnakeCaseUpper.ConvertName(value.ToString()!);
     }
 }
