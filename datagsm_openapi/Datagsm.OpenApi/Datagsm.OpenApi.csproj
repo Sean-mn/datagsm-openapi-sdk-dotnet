@@ -7,7 +7,7 @@
         <RootNamespace>Datagsm.OpenApi</RootNamespace>
 
         <PackageId>Datagsm.OpenApi</PackageId>
-        <Version>1.1.0</Version>
+        <Version>1.1.1</Version>
         <Authors>themoment-team</Authors>
         <Description>Official .NET SDK for the DataGSM OpenAPI — Gwangju Software Meister High School data platform.</Description>
         <PackageTags>datagsm;openapi;sdk;gsm</PackageTags>
