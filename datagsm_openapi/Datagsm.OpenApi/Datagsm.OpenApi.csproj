@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Datagsm.OpenApi</RootNamespace>
+
+        <PackageId>Datagsm.OpenApi</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>themoment-team</Authors>
+        <Description>Official .NET SDK for the DataGSM OpenAPI — Gwangju Software Meister High School data platform.</Description>
+        <PackageTags>datagsm;openapi;sdk;gsm</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/themoment-team/datagsm-openapi-sdk-dotnet</RepositoryUrl>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+</Project>
+
