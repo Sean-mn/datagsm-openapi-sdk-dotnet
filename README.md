@@ -12,7 +12,7 @@ dotnet add package Datagsm.OpenApi
 
 ### 설치 - PackageReference
 ```xml
-<PackageReference Include="Datagsm.OpenApi" Version="1.0.4" />
+<PackageReference Include="Datagsm.OpenApi" Version="1.1.1" />
 ```
 
 ### 사용법
