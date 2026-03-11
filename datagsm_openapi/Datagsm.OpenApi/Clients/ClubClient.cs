@@ -16,7 +16,7 @@ public sealed class ClubClient : BaseClient
     {
         var r = request ?? new ClubRequest();
 
-        var queryParams = new (string, string?)[]
+        var queryParams = new []
         {
             ("clubId",                        r.ClubId?.ToString()),
             ("clubName",                      r.ClubName),
