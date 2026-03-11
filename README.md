@@ -24,23 +24,23 @@ using Datagsm.OpenApi.Models;
 // API 키로 클라이언트 생성
 using var client = new DataGsmClient("your-api-key");
 
-// 학생 조회
+// 학생 목록 조회
 var students = await client.Students.GetStudentsAsync(new StudentRequest
 {
     Grade = 2,
     ClassNum = 1
 });
 
-// 동아리 조회
+// 전공 동아리 목록 조회
 var clubs = await client.Clubs.GetClubsAsync(new ClubRequest
 {
     ClubType = ClubType.MajorClub
 });
 
-// 프로젝트 조회
+// 등록된 프로젝트 목록 조회
 var projects = await client.Projects.GetProjectsAsync();
 
-// 오늘 급식 조회
+// 오늘의 급식 조회
 var meals = await client.Neis.GetMealsAsync();
 
 // 학사일정 범위 조회
