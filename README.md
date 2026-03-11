@@ -1,5 +1,5 @@
 # DataGSM OpenAPI SDK for .NET
-[![NuGet](https://img.shields.io/nuget/v/Datagsm.OpenApi.svg)](https://www.nuget.org/packages/Datagsm.OpenApi/)
+[![NuGet](https://img.shields.io/nuget/v/Datagsm.OpenApi.svg)](https://www.nuget.org/packages/Datagsm.OpenApi)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![.NET](https://img.shields.io/badge/.NET-9.0%2B-blue.svg)](https://dotnet.microsoft.com/)
 
