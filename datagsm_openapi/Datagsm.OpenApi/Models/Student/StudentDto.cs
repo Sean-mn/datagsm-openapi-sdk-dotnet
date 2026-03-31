@@ -11,10 +11,13 @@ public sealed class StudentDto
     public int? ClassNum { get; init; }
     public int? Number { get; init; }
     public int? StudentNumber { get; init; }
-    public Major? Major { get; init; }
+    public Major? Major { get; init; } // 학과
+    public string? Specialty { get; init; } // 전공
     public StudentRole Role { get; init; }
     public int? DormitoryFloor { get; init; }
     public int? DormitoryRoom { get; init; }
     public ClubInfo? MajorClub { get; init; }
     public ClubInfo? AutonomousClub { get; init; }
+    public string? GithubId { get; init; }
+    public string? GithubUrl { get; init; }
 }

@@ -16,7 +16,7 @@ public sealed class StudentClient : BaseClient
     {
         var r = request ?? new StudentRequest();
 
-        var queryParams = new (string, string?)[]
+        var queryParams = new[]
         {
             ("studentId",              r.StudentId?.ToString()),
             ("name",                   r.Name),
@@ -27,6 +27,9 @@ public sealed class StudentClient : BaseClient
             ("sex",                    ToApiString(r.Sex)),
             ("role",                   ToApiString(r.Role)),
             ("dormitoryRoom",          r.DormitoryRoom?.ToString()),
+            ("specialty",              r.Specialty),
+            ("githubId",               r.GithubId),
+            ("githubUrl",              r.GithubUrl),
             ("includeGraduates",       r.IncludeGraduates?.ToString().ToLowerInvariant()),
             ("includeWithdrawn",       r.IncludeWithdrawn?.ToString().ToLowerInvariant()),
             ("onlyEnrolled",           r.OnlyEnrolled?.ToString().ToLowerInvariant()),

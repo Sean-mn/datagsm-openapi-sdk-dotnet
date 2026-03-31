@@ -30,6 +30,15 @@ public sealed class StudentRequest
     /// <summary>기숙사 호실 필터</summary>
     public int? DormitoryRoom { get; set; }
 
+    /// <summary>전공 필터</summary>
+    public string? Specialty { get; set; }
+
+    /// <summary>깃허브 ID 필터</summary>
+    public string? GithubId { get; set; }
+
+    /// <summary>깃허브 URL 필터</summary>
+    public string? GithubUrl { get; set; }
+
     /// <summary>졸업생 포함 여부 (기본값: false)</summary>
     public bool? IncludeGraduates { get; set; }
 
