@@ -6,8 +6,8 @@ public sealed class DataGsmClientOptions
     /// <summary>API 키 (X-API-KEY 헤더로 전송). 30일마다 갱신 필요.</summary>
     public string ApiKey { get; }
 
-    /// <summary>API Base URL. 기본값: https://openapi.data.hellogsm.kr</summary>
-    public string BaseUrl { get; set; } = "https://openapi.data.hellogsm.kr";
+    /// <summary>API Base URL. 기본값: https://openapi.datagsm.kr</summary>
+    public string BaseUrl { get; set; } = "https://openapi.datagsm.kr";
 
     /// <summary>HTTP 요청 타임아웃. 기본값: 30초.</summary>
     public TimeSpan Timeout { get; set; } = TimeSpan.FromSeconds(30);
