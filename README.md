@@ -51,4 +51,4 @@ var schedules = await client.Neis.GetSchedulesAsync(new ScheduleRequest
 });
 ```
 
-> API 키는 [DataGSM 클라이언트 포털](https://datagsm-front-client.vercel.app)에서 발급받을 수 있습니다.
+> API 키는 [DataGSM 클라이언트 포털](https://www.datagsm.kr/)에서 발급받을 수 있습니다.
